@@ -1,0 +1,4 @@
+# Override with env vars DB_URL / DB_USER / DB_PASSWORD in production
+db.url=jdbc:mysql://127.0.0.1:3306/librarydb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata
+db.user=your_db_user
+db.password=your_password_here

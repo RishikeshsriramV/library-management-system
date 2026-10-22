@@ -1,0 +1,21 @@
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-change_me}
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+      - dbdata:/var/lib/mysql
+  app:
+    build: .
+    depends_on: [db]
+    ports: ["8080:8080"]
+    environment:
+      DB_URL: jdbc:mysql://db:3306/librarydb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata
+      DB_USER: root
+      DB_PASSWORD: ${DB_PASSWORD:-change_me}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@library.com}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-Admin@123}
+    restart: unless-stopped
+volumes:
+  dbdata:
