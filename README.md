@@ -25,23 +25,24 @@ Use HTTPS (+ `<secure>true</secure>` in web.xml), a connection pool (HikariCP), 
 Copy `src/main/resources/db.properties.example` to `db.properties` and add your MySQL credentials.
 
 ## Screenshots
+
 **Member Registration**
-![Member Registration](screenshots/01-member-registration.png)
+![Member Registration](Screenshots/01-member-registration.png)
 
 **Member Login**
-![Member Login](screenshots/02-member-login.png)
+![Member Login](Screenshots/02-member-login.png)
 
 **Search Books**
-![Search Books](screenshots/03-member-search-books.png)
+![Search Books](Screenshots/03-member-search-books.png)
 
 **Admin Login**
-![Admin Login](screenshots/04-admin-login.png)
+![Admin Login](Screenshots/04-admin-login.png)
 
 **Admin Dashboard**
-![Admin Dashboard](screenshots/05-admin-dashboard.png)
+![Admin Dashboard](Screenshots/05-admin-dashboard.png)
 
 **Admin Issues Book**
-![Issue Book](screenshots/06-admin-issues-book.png)
+![Issue Book](Screenshots/06-admin-issues-book.png)
 
 **Member Book History**
-![Member History](screenshots/07-member-book-history.png)
+![Member History](Screenshots/07-member-book-history.png)
